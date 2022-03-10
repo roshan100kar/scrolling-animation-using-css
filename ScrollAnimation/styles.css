@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  font-family: "Courier New", Courier, monospace;
+  font-style: oblique;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background-image: url(https://images.unsplash.com/photo-1555074566-485a0b0494ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=826&q=80);
+  background-size: cover;
+  overflow-x: hidden;
+}
+.box {
+  background-color: blueviolet;
+  color: wheat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  height: 200px;
+  width: 400px;
+  border-radius: 10px;
+  border-color: chartreuse;
+  border: 2px solid;
+  box-shadow: 10px 10px fuchsia;
+  transform: translateX(200%);
+  transition: transform 0.4s ease;
+}
+img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('https://images.unsplash.com/photo-1642854452098-4ef23471a076?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80');
+  background-size: cover;
+}
+.box:nth-of-type(even) {
+  transform: translate(-200%);
+}
+.box.show {
+  transform: translate(0);
+}
